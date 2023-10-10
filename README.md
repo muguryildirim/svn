@@ -2,9 +2,6 @@
 
 Subversion is a free/open-source version control system. Subversion manages files and directories over time. A tree of files is placed into a central repository. The repository is much like an ordinary file server, except that it remembers every change ever made to your files and directories. This allows you to recover older versions of your code, or examine the history of how your code was changed. 
 
-## SVN Working Copy 
-SVN is a repository that holds all our versioned data, which is also called the SVN server. SVN client program which manages local reflections of portions of that versioned data which is called a working copy. SVN clients can access its repository across networks. Multiple users can access the repository at the same time.
-
 ## Installing SVN on Linux
 ### Debian or Ubuntu 
 For Debian-based distributions, you can install SVN using the apt package manager. Open the terminal and run the following command:
@@ -22,6 +19,7 @@ If you are using Arch Linux, you can install SVN with the pacman package manager
 
 `sudo pacman -S subversion`
 
+## Creating SVN Repository
 Once the SVN installation is complete, you can start working using SVN commands. For example, you can use the svnadmin command to create an SVN repository or use the svn checkout command to check out an existing repository. To create a sample SVN repository:
 
 `svnadmin create /path/to/repository`
@@ -29,6 +27,9 @@ Once the SVN installation is complete, you can start working using SVN commands.
 To check out an example SVN repository:
 
 `svn checkout URL_of_the_repository`
+
+## SVN Working Copy 
+SVN is a repository that holds all our versioned data, which is also called the SVN server. SVN client program which manages local reflections of portions of that versioned data which is called a working copy. SVN clients can access its repository across networks. Multiple users can access the repository at the same time.
 
 ## SVN Checkout - Create Working Copy
 Checkout command is used to download sources from SVN repository to a working copy. If you want to access files from the SVN server, checkout is the first operation you should perform. SVN checkout creates the working copy, from where you can edit, delete, or add content. You can checkout a file, directory, trunk, or whole project. To checkout you should know URL of the components you want to checkout.
