@@ -84,7 +84,7 @@ The example compares the filename@R1 and filename@R2.
 
 `---         Main.java    (revision 1)`
 
-`+++         Main.java    (working copy)
+`+++         Main.java    (working copy)`
 
 `@@ -1 +1 @@`
 
